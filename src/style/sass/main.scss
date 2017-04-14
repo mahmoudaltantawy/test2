@@ -1,0 +1,77 @@
+@import '_variables';
+
+
+body{
+    background:$white;
+    .home__content , .about__content{
+       padding: 20px;
+       text-align: justify;
+       line-height: 2;
+    }
+   
+
+    nav.navbar{
+        background: $navy ;
+       
+        a{
+            color: $white;
+            font-size: $nav__fontsize;
+            font-family: $nav__fontfamily;
+            
+        }
+       li>a:focus, .nav>li>a:hover{background: none}
+
+       
+    }
+
+    .users{
+        background-color: $white;
+        li{
+            padding: 10px;
+            border:1px solid $light__gray;
+            border-left:1px solid  $navy  ;
+            color: $font_color;
+            font-size: 17px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+                &:hover{
+                    box-shadow: 1px 1px 3px $primary_color;
+                    padding-left: 12px;
+                }
+            }
+
+    }
+    .user__info{
+        li{
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+          .user__avatar{
+            width: 315px;
+            height: 280px;
+            margin-bottom: 10px;
+            
+        img{
+            width: 100%;
+            height: 100%;
+            margin-left: 24%;
+            }
+       }
+       .load__info{
+           background: $navy;
+           color:$white;
+           padding: 10px;
+           border-radius: 5px;
+           a{font-family: $nav__fontfamily;}
+
+       }
+       .user__bio{
+          
+          text-align: center;
+            box-shadow: 1px 1px 3px #ccc;
+            margin-bottom: 15px;;
+       }
+    }
+}
